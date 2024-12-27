@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuadhinPro - Prayer Times & Adhan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="current-location">Loading location...</span>
+            </div>
+            <div class="current-time">
+                <span id="current-prayer">Asr</span>
+                <div class="time" id="current-time">00:00</div>
+                <div class="next-prayer" id="next-prayer">Next Prayer in 17:50</div>
+            </div>
+        </header>
+
+        <div class="prayer-times">
+            <div class="prayer-card fajr">
+                <div class="prayer-name">Fajr</div>
+                <div class="prayer-time" id="fajr-time">05:45 AM</div>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="prayer-card sunrise">
+                <div class="prayer-name">Sunrise</div>
+                <div class="prayer-time" id="sunrise-time">07:05 AM</div>
+                <label class="toggle">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="prayer-card dhuhr">
+                <div class="prayer-name">Dhuhr</div>
+                <div class="prayer-time" id="dhuhr-time">12:27 PM</div>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="prayer-card asr">
+                <div class="prayer-name">Asr</div>
+                <div class="prayer-time" id="asr-time">03:29 PM</div>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="prayer-card maghrib">
+                <div class="prayer-name">Maghrib</div>
+                <div class="prayer-time" id="maghrib-time">06:59 PM</div>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="prayer-card isha">
+                <div class="prayer-name">Isha</div>
+                <div class="prayer-time" id="isha-time">08:25 PM</div>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <i class="fas fa-clock"></i>
+                <span>Times</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-qibla"></i>
+                <span>Qibla</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-book-open"></i>
+                <span>Quran</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+        </nav>
+    </div>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

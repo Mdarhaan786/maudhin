@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.muadhinpro.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.muadhinpro.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // AndroidX core libraries
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Location services for prayer time calculations
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    
+    // Background work manager for scheduling notifications
+    implementation 'androidx.work:work-runtime:2.8.1'
+    
+    // Additional utilities
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.google.code.gson:gson:2.10'
+}

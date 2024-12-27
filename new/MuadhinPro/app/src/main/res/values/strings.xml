@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MuadhinPro</string>
+    <string name="prayer_times">Prayer Times</string>
+    <string name="qibla">Qibla</string>
+    <string name="settings">Settings</string>
+</resources>
